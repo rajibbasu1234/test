@@ -9,9 +9,9 @@ resource "google_compute_instance" "default" {
   machine_type = "e2-micro"
 
   ### ADD THIS BLOCK
-  metadata = {
-    ssh-keys = "rajibbasu123:${file("~/.ssh/id_rsa.pub")}"
-  }
+#  metadata = {
+#    ssh-keys = "rajibbasu123:${file("~/.ssh/id_rsa.pub")}"
+#  }
 
   network_interface {
     network = "default"
