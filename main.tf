@@ -1,11 +1,11 @@
 provider "google" {
-  project     = "engaged-iridium-418715"
-  region      = "us-east1"
-  zone        = "us-east1-b"
+  project = "engaged-iridium-418715"
+  region  = "us-east1"
+  zone    = "us-east1-b"
 }
 resource "google_compute_instance" "default" {
-  provider = google
-  name = "default"
+  provider     = google
+  name         = "default"
   machine_type = "e2-micro"
 
   ### ADD THIS BLOCK
